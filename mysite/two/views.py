@@ -24,4 +24,8 @@ def get_student(request):
     for student in students:
         print(student.s_name)
 
-    return HttpResponse("Student List")
+    context = {
+        "hobby" : "test"
+    }
+
+    return render(request, 'student.html',context=context)
