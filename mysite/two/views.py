@@ -17,3 +17,11 @@ def add_student(request):
 
     return HttpResponse("Add Success %s" % student.s_name)
     
+def get_student(request):
+
+    students - Student.objects.all()
+    
+    for student in students:
+        print(student.s_name)
+
+    return HttpResponse("Student List")
