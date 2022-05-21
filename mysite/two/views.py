@@ -32,7 +32,7 @@ def get_student(request):
 
     return render(request, 'student.html', context=context)
     
- def update_student(request):
+def update_student(request):
     
         student = Student.objects.get(pk=2)
         student.s_name = 'Jack'
