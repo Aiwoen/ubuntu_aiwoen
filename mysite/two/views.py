@@ -39,3 +39,11 @@ def update_student(request):
     student.save()
     
     return HttpResponse("Update Success")
+
+
+def delete_student(request):
+
+    student = Student.objects.get(pk=3)
+    student.delete()
+    
+    return HttpResponse("Student Delete Success")
