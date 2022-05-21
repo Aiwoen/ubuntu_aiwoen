@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': 'mysite', #here is import
         'USER': 'aiwoen',
         'PASSWORD': '2959',
-        'HOST': '%',
+        'HOST': 'localhost',
         'PORT': '3306',
 }
 }
