@@ -22,5 +22,5 @@ urlpatterns = [
     path('hello/', views.hello),
     path('index/', views.index),
     path('home/', views.home),
-    path('two/', include(two.urls)),
+    path('two/', include('two.urls')),
 ]
