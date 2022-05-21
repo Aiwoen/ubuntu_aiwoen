@@ -19,7 +19,7 @@ def add_student(request):
     
 def get_student(request):
 
-    students - Student.objects.all()
+    students = Student.objects.all()
     
     for student in students:
         print(student.s_name)
