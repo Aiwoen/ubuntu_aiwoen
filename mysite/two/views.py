@@ -11,8 +11,8 @@ def index(request):
 def add_student(request):
 
     student = Student()
-    student.s_name = 'Jerry'
+    student.s_name = 'Jerry%d' % random.randrange(100)
     student.save()
 
-    return HttpResponse("Add Success")
+    return HttpResponse("Add Success %s" % student.s_name)
     
