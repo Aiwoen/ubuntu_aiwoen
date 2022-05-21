@@ -7,8 +7,9 @@
 	</head>
     <body>
         <ul>
-			<li>Ubuntu</li>
-			<li>{{ hobby }}</li>
+			{% for student in students %}
+				<li>{{ student.s_name }}<li>
+			{% endfor %}
 		</ul>
     </body>
 </html>
