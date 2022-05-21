@@ -12,7 +12,7 @@ def add_student(request):
 
     student = Student()
     student.s_name = 'Jerry'
-    sturdent.save()
+    student.save()
 
     return HttpResponse("Add Success")
     
