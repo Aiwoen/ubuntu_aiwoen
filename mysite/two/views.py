@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from Two.models import Student
+from two.models import Student
 
 
 # Create your views here.
