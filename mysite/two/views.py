@@ -26,8 +26,8 @@ def get_student(request):
 
     context = {
     
-        "hobby" : "test"
-        "students" : students
+        "hobby":"test",
+        "students":students
     }
 
     return render(request, 'student.html', context=context)
