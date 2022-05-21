@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def hello(requset):
     return HttpResponse("666")
+    
+def index(requset):
+    return render(requset, 'index.html')
