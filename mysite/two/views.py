@@ -28,4 +28,4 @@ def get_student(request):
         "hobby" : "test"
     }
 
-    return render(request, 'student.html',context=context)
+    return render(request, 'student.html')
