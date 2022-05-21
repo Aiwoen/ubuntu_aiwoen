@@ -34,7 +34,7 @@ def get_student(request):
     
  def update_student(request):
     
-        student = Student.object.get(pk=2)
+        student = Student.objects.get(pk=2)
         student.s_name = 'Jack'
         student.save()
     
