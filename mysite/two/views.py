@@ -31,3 +31,11 @@ def get_student(request):
     }
 
     return render(request, 'student.html', context=context)
+    
+ def update_student(request):
+    
+        student = Student.object.get(pk=2)
+        student.s_name = 'Jack'
+        student.save()
+    
+    return HttpResponse("Update Success")
