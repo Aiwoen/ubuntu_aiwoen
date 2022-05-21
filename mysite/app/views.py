@@ -8,3 +8,6 @@ def hello(requset):
     
 def index(requset):
     return render(requset, 'index.html')
+    
+def home(requset):
+    return render(requset, 'home.html' )
