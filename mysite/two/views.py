@@ -21,7 +21,7 @@ def add_students(request):
     
     student = Strudent()
     
-    for i in range(10)
+    for i in range(10):
         student.s_namen = 'Jerry%d' %i
         student.save()
     
