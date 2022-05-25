@@ -22,7 +22,7 @@ def add_students(request):
     student = Student()
     
     for i in range(10):
-        student.s_namen = 'Jerry%d' %i
+        student.s_name = 'Jerry%d' %i
         student.save()
     
     return HttpResponse("Add Success all") 
