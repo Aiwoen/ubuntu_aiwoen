@@ -19,7 +19,7 @@ def add_student(request):
     
 def add_students(request):
     
-    student = Strudent()
+    student = Student()
     
     for i in range(10):
         student.s_namen = 'Jerry%d' %i
