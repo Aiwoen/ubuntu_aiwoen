@@ -17,6 +17,16 @@ def add_student(request):
 
     return HttpResponse("Add Success %s" % student.s_name)
     
+def add_students(request):
+    
+    student = Strudent()
+    
+    for i in range(10)
+        student.s_namen = 'Jerry%d' %i
+        student.save()
+    
+    return HttpResponse("Add Success all") 
+
 def get_student(request):
 
     students = Student.objects.all()
