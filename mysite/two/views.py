@@ -21,9 +21,10 @@ def add_students(request):
     
     student = Student()
     
-    for i in range(10):
+    for i in range(0,10):
         student.s_name = 'Jerry%d' %i
-        student.save()
+        
+    student.save()
     
     return HttpResponse("Add Success all") 
 
